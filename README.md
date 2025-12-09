@@ -83,8 +83,7 @@ Bellabeat wants insights into **how users interact with wearable devices** to im
 ---
 
 # 🔷 A. SQL Analysis (MySQL)  
-👉 *All screenshots are stored in:*  
-📂 [`Fitbit_analysis_results`](./Fitbit_analysis_results)
+👉 *All screenshots are stored in:*  📂 [`Fitbit_analysis_results`](./Fitbit_analysis_results)
 📄 SQL Script: [`fitbit_analysis.sql`](./fitbit_analysis.sql)
 
 ### ✔ Highlights  
