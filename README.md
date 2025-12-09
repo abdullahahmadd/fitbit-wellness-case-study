@@ -1,5 +1,4 @@
-# 📊 Fitbit Wellness Case Study  
-### Google Data Analytics Professional Certificate – Capstone Project  
+# 📊 Fitbit Wellness Case Study — Google Data Analytics Capstone  
 **Ask → Prepare → Process → Analyze → Share → Act**
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=abdullahahmadd.fitbit-wellness-case-study)
@@ -13,19 +12,19 @@
 ---
 
 # 📑 Table of Contents  
-- 📌 Project Overview  
-- 🏁 Business Task  
-- 🧭 1 Ask Phase  
-- 📥 2 Prepare Phase  
-- 🧹 3 Process Phase  
-- 🗄️ 4 Analyze Phase  
-  - A. SQL Analysis  
-  - B. R Analysis  
-- 📤 5 Share Phase  
-- 🚀 6 Act Phase  
-- 📂 Repository Contents  
-- 🙌 Acknowledgments  
-- 👤 Author  
+- [📌 Project Overview](#-project-overview)  
+- [🏁 Business Task](#-business-task)  
+- [🧭 1 Ask Phase](#-1-ask-phase)  
+- [📥 2 Prepare Phase](#-2-prepare-phase)  
+- [🧹 3 Process Phase](#-3-process-phase)  
+- [🗄️ 4 Analyze Phase](#️-4-analyze-phase)  
+  - [🔷 A. SQL Analysis](#-a-sql-analysis-mysql)  
+  - [🔷 B. R Analysis](#-b-r-analysis-rstudio)  
+- [📤 5 Share Phase](#-5-share-phase)  
+- [🚀 6 Act Phase](#-6-act-phase)  
+- [📂 Repository Contents](#-repository-contents)  
+- [🙌 Acknowledgments](#-acknowledgments)  
+- [👤 Author](#-author)   
 
 ---
 
