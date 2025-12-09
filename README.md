@@ -2,9 +2,9 @@
 **Ask → Prepare → Process → Analyze → Share → Act**
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=abdullahahmadd.fitbit-wellness-case-study)
-![R](https://img.shields.io/badge/Tool-R-blue?logo=r)
 ![SQL](https://img.shields.io/badge/Tool-MySQL-orange?logo=mysql)
 ![Excel](https://img.shields.io/badge/Tool-Excel-green?logo=microsoft-excel)
+![R](https://img.shields.io/badge/Tool-R-blue?logo=r)
 ![License](https://img.shields.io/badge/License-CC0_1.0-lightgrey)
 
 ---
