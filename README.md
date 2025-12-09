@@ -50,7 +50,7 @@ Bellabeat wants insights into **how users interact with wearable devices** to im
 - Identified problem  
 - Defined stakeholders  
 - Clarified analysis questions  
-
+The output of this phase was a clear understanding of what insights needed to be extracted from the dataset.
 ---
 
 # 📥 2. Prepare Phase  
@@ -62,14 +62,14 @@ Bellabeat wants insights into **how users interact with wearable devices** to im
 
 ### Data Issues Found  
 - Inconsistent datetime formats  
-- HR outliers  
+- Heart rate outliers  
 - Missing sleep values  
 - Large volume of high-frequency logs  
 
 ---
 
 # 🧹 3. Process Phase  
-### Tools: Excel  
+### Tools: MS Excel  
 - Fixed inconsistencies  
 - Created columns: `day_of_week`, `week_number`, `sleep_hours`  
 - Rounded numerical data  
@@ -126,7 +126,7 @@ Bellabeat wants insights into **how users interact with wearable devices** to im
 
 ### 📘 9. Daily Heart Rate Summary  
 ![HR Summary](./Fitbit_analysis_results/daily_heartrate_summary_sql.png)  
-*Mean, min, and max HR per day.*
+*Mean, min, and max Heartrate per day.*
 
 ### 📘 10. Daily Master Table  
 ![Daily Master](./Fitbit_analysis_results/daily_master_table_validation_sql.png)  
