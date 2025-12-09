@@ -168,9 +168,6 @@ The output of this phase was a clear understanding of what insights needed to be
 ![Hourly Steps](./Fitbit_analysis_results/avg_steps_by_hour_sql.png)  
 *Shows morning peak activity (7–10 AM).*
 
-### 📘 20. Daily Steps — R Comparison  
-![Daily Steps R](./Fitbit_analysis_results/avg_daily_steps_by_day_of_week_R.png)  
-*R visualization confirming weekday activity trends.*
 ---
 
 # 🔷 B. R Analysis (RStudio)  
