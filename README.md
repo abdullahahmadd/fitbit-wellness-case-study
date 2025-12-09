@@ -108,8 +108,8 @@ Bellabeat wants insights into **how users interact with wearable devices** to im
 ![Invalid HR](./Fitbit_analysis_results/invalid_heartrate_records_sql.png)  
 *Confirms filtering of unrealistic HR values.*
 
-### 📘 5. Daily Sleep Summary  
-![Daily Sleep](./Fitbit_analysis_results/daily_sleep_summary_sql.png)  
+### 📘 5. Daily Sleep Summary
+![Daily Sleep](./Fitbit_analysis_results/daily_sleep_sum_sql.png)  
 *Aggregates sleep minutes per user per day.*
 
 ### 📘 6. Daily Steps Summary  
