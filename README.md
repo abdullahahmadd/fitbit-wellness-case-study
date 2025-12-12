@@ -11,16 +11,18 @@
 
 # Table of Contents
 
-1. [Project Overview](#project-overview)  
-2. [Repository Contents](#repository-contents)  
-3. [Business Task](#business-task)  
-4. [1 Ask Phase](#1-ask-phase)  
-5. [2 Prepare Phase](#2-prepare-phase)  
-6. [3 Process Phase](#3-process-phase)  
-7. [4 Analyze Phase](#4-analyze-phase)  
-8. [5 Share Phase](#5-share-phase)  
-9. [6 Act Phase](#6-act-phase)  
-10. [Acknowledgments](#acknowledgments)     
+1. [Project Overview](#-project-overview)  
+2. [Repository Contents](#-repository-contents)  
+3. [Business Task](#-business-task)  
+4. [1 Ask Phase](#-1-ask-phase)  
+5. [2 Prepare Phase](#-2-prepare-phase)  
+6. [3 Process Phase](#-3-process-phase)  
+7. [4 Analyze Phase](#️-4-analyze-phase)  
+   - [A. SQL Analysis](#-a-sql-analysis-mysql)  
+   - [B. R Analysis](#-b-r-analysis-rstudio)  
+8. [5 Share Phase](#-5-share-phase)  
+9. [6 Act Phase](#-6-act-phase)  
+10. [Acknowledgments](#-acknowledgments)     
 
 ---
 
