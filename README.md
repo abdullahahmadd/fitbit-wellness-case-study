@@ -62,14 +62,13 @@ The output of this phase was a clear understanding of what insights needed to be
 ---
 
 # 📥 Prepare Phase  
-### Tools: 
-Excel  
+## 1. Tools: MS Excel  
 - Loaded 7 raw Fitbit CSV files  
 - Cleaned messy fields  
 - Standardized structures  
 - Created **Tranformed_Fitbit_Dataset.xlsx** for SQL + R
 
-### Data Issues Found  
+### 2. Data Issues Found  
 - Inconsistent datetime formats  
 - Heart rate outliers  
 - Missing sleep values  
@@ -87,103 +86,157 @@ Excel
 ---
 
 # 🗄️ Analyze Phase  
-### Tools: MySQL Workbench & RStudio  
+### 1. Tools: MySQL Workbench & RStudio  
 
 ---
 
-## 🔷 A. SQL Analysis (MySQL)  
-👉 *All screenshots are stored in:*  📂 [`Fitbit_analysis_results`](./Fitbit_analysis_results)
+## 2. SQL Analysis (MySQL)  
+*All screenshots are stored in:*  📂 [`Fitbit_analysis_results`](./Fitbit_analysis_results)
 📄 SQL Script: [`fitbit_analysis.sql`](./fitbit_analysis.sql)
 
-### ✔ Highlights  
+### Highlights  
 - Created structured tables  
 - Built aggregated metrics (daily sleep, HR, steps, calories, intensity)  
 - Constructed **daily_master** table  
 - Computed trends & summary statistics  
 
-### 📘 1. Row Counts Per Table  
-![Row Counts](./Fitbit_analysis_results/row_counts_per_table_sql.png)  
-*Validates number of rows loaded for each dataset.*
-
-### 📘 2. Distinct Users  
-![Distinct Users](./Fitbit_analysis_results/daily_activity_distinct_users_sql.png)  
-*Shows total unique Fitbit users.*
-
-### 📘 3. Date Range Validation  
-![Date Range](./Fitbit_analysis_results/date_range_checks_sql.png)  
-*Ensures consistent date ranges across datasets.*
-
-### 📘 4. Invalid Heart Rate Check  
-![Invalid HR](./Fitbit_analysis_results/invalid_heartrate_records_sql.png)  
-*Confirms filtering of unrealistic HR values.*
-
-### 📘 5. Daily Sleep Summary
-![Daily Sleep](./Fitbit_analysis_results/daily_sleep_sum_sql.png)  
-*Aggregates sleep minutes per user per day.*
-
-### 📘 6. Daily Steps Summary  
-![Daily Steps](./Fitbit_analysis_results/daily_steps_sql.png)  
-*Daily step totals derived from hourly logs.*
-
-### 📘 7. Daily Calories Summary  
-![Calories](./Fitbit_analysis_results/daily_calories_sql.png)  
-*Total daily calories burned.*
-
-### 📘 8. Daily Intensity Summary  
-![Intensity](./Fitbit_analysis_results/daily_intensity_summary_sql.png)  
-*Daily totals and averages of intensity.*
-
-### 📘 9. Daily Heart Rate Summary  
-![HR Summary](./Fitbit_analysis_results/daily_heartrate_summary_sql.png)  
-*Mean, min, and max Heartrate per day.*
-
-### 📘 10. Daily Master Table  
-![Daily Master](./Fitbit_analysis_results/daily_master_table_validation_sql.png)  
-*Merged dataset combining all metrics.*
-
-### 📘 11. Total Users Check  
-![Total Users](./Fitbit_analysis_results/total_users_sql.png)  
-*Ensures user tracking across tables.*
-
-### 📘 12. Summary Metrics  
-![Summary Metrics](./Fitbit_analysis_results/overall_summary_metrics_sql.png)  
-*Key daily averages: steps, sleep, HR, calories.*
-
-### 📘 13. Average Steps by Day of Week  
-![Avg Steps Week](./Fitbit_analysis_results/avg_steps_by_day_of_week_sql.png)  
-*Reveals highest activity mid-week.*
-
-### 📘 14. Sleep vs Steps  
-![Sleep vs Steps](./Fitbit_analysis_results/sleep_vs_steps_avg_sql.png)  
-*Shows relationship between sleep duration and steps.*
-
-### 📘 15. Sedentary vs Calories  
-![Sed vs Cal](./Fitbit_analysis_results/sedentary_vs_calories_avg_sql.png)  
-*Higher sedentary time reduces daily calorie burn.*
-
-### 📘 16. Heart Rate Trend  
-![HR Trend](./Fitbit_analysis_results/daily_heartrate_trend_sql.png)  
-*Displays daily HR fluctuations.*
-
-### 📘 17. Top 10 Active Users  
-![Top Users](./Fitbit_analysis_results/top_10_users_by_avg_steps_sql.png)  
-*Ranks users by average steps.*
-
-### 📘 18. Sorted Weekday Steps  
-![Weekday Sorted](./Fitbit_analysis_results/avgg_steps_by_day_of_week_sql.png)  
-*Weekday ranking of step totals.*
-
-### 📘 19. Average Steps by Hour  
-![Hourly Steps](./Fitbit_analysis_results/avg_steps_by_hour_sql.png)  
-*Shows morning peak activity (7–10 AM).*
+| 1. Row Counts Per Table |
+|-----------------------------------|
+| ![Row Counts](./Fitbit_analysis_results/row_counts_per_table_sql.png) |
+| Validates number of rows loaded for each dataset. |
 
 ---
 
-## 🔷 B. R Analysis (RStudio)  
-👉 Folder: **fitbit_analysis_R**  
-Using `tidyverse`, `lubridate`, `ggplot2`
+| 2. Distinct Users |
+|-----------------------------|
+| ![Distinct Users](./Fitbit_analysis_results/daily_activity_distinct_users_sql.png) |
+| Shows total unique Fitbit users in the dataset. |
 
-### ✔ Tasks  
+---
+
+| 3. Date Range Validation |
+|------------------------------------|
+| ![Date Range](./Fitbit_analysis_results/date_range_checks_sql.png) |
+| Ensures consistent and complete date coverage across all tables. |
+
+---
+
+| 4. Invalid Heart Rate Records |
+|-----------------------------------------|
+| ![Invalid HR](./Fitbit_analysis_results/invalid_heartrate_records_sql.png) |
+| Confirms filtering out of unrealistic heart rate values. |
+
+---
+
+| 5. Daily Sleep Summary |
+|----------------------------------|
+| ![Daily Sleep](./Fitbit_analysis_results/daily_sleep_sum_sql.png) |
+| Aggregates sleep minutes per user per day. |
+
+---
+
+| 6. Daily Steps Summary |
+|----------------------------------|
+| ![Daily Steps](./Fitbit_analysis_results/daily_steps_sql.png) |
+| Daily step totals derived from hourly logs. |
+
+---
+
+| 7. Daily Calories Summary |
+|-------------------------------------|
+| ![Calories](./Fitbit_analysis_results/daily_calories_sql.png) |
+| Total calories burned per user per day. |
+
+---
+
+| 8. Daily Intensity Summary |
+|--------------------------------------|
+| ![Intensity](./Fitbit_analysis_results/daily_intensity_summary_sql.png) |
+| Daily totals and averages of intensity metrics. |
+
+---
+
+| 9. Daily Heart Rate Summary |
+|---------------------------------------|
+| ![HR Summary](./Fitbit_analysis_results/daily_heartrate_summary_sql.png) |
+| Mean, minimum, and maximum heart rate per day. |
+
+---
+
+| 10. Daily Master Table Validation |
+|--------------------------------------------|
+| ![Daily Master](./Fitbit_analysis_results/daily_master_table_validation_sql.png) |
+| Combined dataset merging steps, sleep, HR, intensity, and calories. |
+
+---
+
+| 11. Total Users Check |
+|--------------------------------|
+| ![Total Users](./Fitbit_analysis_results/total_users_sql.png) |
+| Ensures user presence across aggregated datasets. |
+
+---
+
+| 12. Summary Metrics Overview |
+|---------------------------------------|
+| ![Summary Metrics](./Fitbit_analysis_results/overall_summary_metrics_sql.png) |
+| Key averages: steps, sleep hours, heart rate, calories. |
+
+---
+
+| 13. Average Steps by Day of Week |
+|-------------------------------------------|
+| ![Avg Steps Week](./Fitbit_analysis_results/avg_steps_by_day_of_week_sql.png) |
+| Reveals which weekdays show the highest activity levels. |
+
+---
+
+| 14. Sleep vs Steps Relationship |
+|------------------------------------------|
+| ![Sleep vs Steps](./Fitbit_analysis_results/sleep_vs_steps_avg_sql.png) |
+| Indicates whether longer sleep duration is linked with more steps. |
+
+---
+
+| 15. Sedentary Minutes vs Calories Burned |
+|---------------------------------------------------|
+| ![Sed vs Cal](./Fitbit_analysis_results/sedentary_vs_calories_avg_sql.png) |
+| Shows that higher sedentary time corresponds with fewer calories burned. |
+
+---
+
+| 16. Daily Average Heart Rate Trend |
+|---------------------------------------------|
+| ![HR Trend](./Fitbit_analysis_results/daily_heartrate_trend_sql.png) |
+| Displays day-to-day heart rate fluctuations. |
+
+---
+
+| 17. Top 10 Most Active Users |
+|----------------------------------------|
+| ![Top Users](./Fitbit_analysis_results/top_10_users_by_avg_steps_sql.png) |
+| Ranks users based on average daily steps. |
+
+---
+
+| 18. Sorted Weekday Step Counts |
+|-----------------------------------------|
+| ![Weekday Sorted](./Fitbit_analysis_results/avgg_steps_by_day_of_week_sql.png) |
+| Weekday ranking of activity levels. |
+
+---
+
+| 19. Average Steps by Hour |
+|------------------------------------|
+| ![Hourly Steps](./Fitbit_analysis_results/avg_steps_by_hour_sql.png) |
+| Highlights peak activity hours (7 AM – 10 AM). |
+
+---
+
+## 3. R Analysis (RStudio)  
+📂 Folder: **fitbit_analysis_R**
+
+### Tasks  
 - Imported all 7 sheets  
 - Converted and cleaned date/time fields  
 - Summarized daily HR, sleep, steps, calories, intensity  
@@ -193,45 +246,54 @@ Using `tidyverse`, `lubridate`, `ggplot2`
 ---
 
 # 📤 Share Phase  
-### Tools Used: **RStudio (ggplot2)**  
+### 1. Tools: **RStudio**  
 Visualizations were created to communicate insights clearly and concisely.
 
-Below are **all final R visualizations** with filenames and one-line descriptions.
+---
+
+## 2. R Visualizations (RStudio)
+
+Below are **all final R visualizations**.
+
+| 1. Average Daily Steps by Day of Week |
+|------------------------------------------------------|
+| ![Avg Steps Week](./Fitbit_analysis_results/avg_daily_steps_by_of_week_R.png) |
+| Shows which weekdays have the highest activity levels (Wednesday peaks). |
 
 ---
 
-## 📊 **1. Average Daily Steps by Day of Week**
-![Avg Steps Week](./Fitbit_analysis_results/avg_daily_steps_by_of_week_R.png)  
-*Shows which weekdays have the highest activity levels (Wednesday peaks).*
+| 2. Sleep Hours vs Daily Steps |
+|----------------------------------------------|
+| ![Sleep vs Steps](./Fitbit_analysis_results/relationship_btw_sleep_hrs_&_daily_steps_R.png) |
+| Reveals whether higher sleep duration correlates with greater daily activity. |
 
 ---
 
-## 📊 **2. Sleep Hours vs Daily Steps**
-![Sleep vs Steps](./Fitbit_analysis_results/relationship_btw_sleep_hrs_&_daily_steps_R.png)  
-*Reveals whether more sleep correlates with higher activity.*
+| 3. Calories Burned vs Active Minutes |
+|-----------------------------------------------------|
+| ![Calories vs Active Minutes](./Fitbit_analysis_results/calories_burned_vs_active_mints_R.png) |
+| Demonstrates how calorie burn increases as active minutes rise. |
 
 ---
 
-## 📊 **3. Calories Burned vs Active Minutes**
-![Calories vs Active Minutes](./Fitbit_analysis_results/calories_burned_vs_active_mints_R.png)  
-*Shows how calories burned increase as active minutes rise.*
+| 4. Average Daily Heart Rate Trend |
+|--------------------------------------------------|
+| ![HR Trend](./Fitbit_analysis_results/daily_Avg_heartrate_trend_R.png) |
+| Shows long-term fluctuations in daily average heart rate. |
 
 ---
 
-## 📊 **4. Average Daily Heart Rate Trend**
-![HR Trend](./Fitbit_analysis_results/daily_Avg_heartrate_trend_R.png)  
-*Displays long-term changes in daily average heart rate.*
+| 5. Average Steps by Hour of Day |
+|------------------------------------------------|
+| ![Steps by Hour](./Fitbit_analysis_results/avg_steps_by_hour_of_day_R.png) |
+| Highlights peak morning activity hours (7 AM–10 AM). |
 
 ---
 
-## 📊 **5. Average Steps by Hour of Day**
-![Steps by Hour](./Fitbit_analysis_results/avg_steps_by_hour_of_day_R.png)  
-*Identifies morning peak activity (7 AM–10 AM).*
+# 🚀 Act Phase
 
----
+### 1. **High-Level Insights**
 
-# 🚀 Act Phase  
-### ✔ **High-Level Insights**
 - **Activity peaks** between 7 AM–10 AM  
 - **Wednesday** shows maximum movement  
 - Users sleep **5–7.5 hours on average**  
@@ -241,7 +303,7 @@ Below are **all final R visualizations** with filenames and one-line description
 
 ---
 
-### ✔ **Recommendations for Bellabeat**
+### 2. **Recommendations for Bellabeat**
 
 #### Marketing Strategy  
 - Send morning “Get Moving” nudges  
@@ -261,7 +323,7 @@ Below are **all final R visualizations** with filenames and one-line description
 ---
 
 # 🙌 Acknowledgments  
-Dataset: **Fitbit Fitness Tracker Data (Public Domain – Mobius / Kaggle)**  
+**Dataset:** Fitbit Fitness Tracker Data (Public Domain – Mobius / Kaggle)  
 Completed as part of the **Google Data Analytics Professional Certificate**
 
 ---
