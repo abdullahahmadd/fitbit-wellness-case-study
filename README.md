@@ -14,12 +14,12 @@
 1. [Project Overview](#project-overview)  
 2. [Repository Contents](#repository-contents)  
 3. [Business Task](#business-task)  
-4. [Ask Phase](#1-ask-phase)  
-5. [Prepare Phase](#2-prepare-phase)  
-6. [Process Phase](#3-process-phase)  
-7. [Analyze Phase](#4-analyze-phase)  
-8. [Share Phase](#5-share-phase)  
-9. [Act Phase](#6-act-phase)  
+4. [1 Ask Phase](#1-ask-phase)  
+5. [2 Prepare Phase](#2-prepare-phase)  
+6. [3 Process Phase](#3-process-phase)  
+7. [4 Analyze Phase](#4-analyze-phase)  
+8. [5 Share Phase](#5-share-phase)  
+9. [6 Act Phase](#6-act-phase)  
 10. [Acknowledgments](#acknowledgments)     
 
 ---
