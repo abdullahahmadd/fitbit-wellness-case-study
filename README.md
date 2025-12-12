@@ -301,8 +301,6 @@ Below are **all final R visualizations**.
 - Sedentary minutes negatively affect calorie burn  
 - Afternoon heart rate peaks are common  
 
----
-
 ### 2. **Recommendations for Bellabeat**
 
 #### Marketing Strategy  
