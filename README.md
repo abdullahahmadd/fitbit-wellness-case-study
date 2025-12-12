@@ -68,7 +68,7 @@ The output of this phase was a clear understanding of what insights needed to be
 - Standardized structures  
 - Created **Tranformed_Fitbit_Dataset.xlsx** for SQL + R
 
-### 2. Data Issues Found  
+## 2. Data Issues Found  
 - Inconsistent datetime formats  
 - Heart rate outliers  
 - Missing sleep values  
