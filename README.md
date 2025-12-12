@@ -62,7 +62,8 @@ The output of this phase was a clear understanding of what insights needed to be
 ---
 
 # 📥 Prepare Phase  
-### Tools : ### Excel  
+### Tools: 
+Excel  
 - Loaded 7 raw Fitbit CSV files  
 - Cleaned messy fields  
 - Standardized structures  
