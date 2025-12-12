@@ -246,7 +246,7 @@ The output of this phase was a clear understanding of what insights needed to be
 ---
 
 # 📤 Share Phase  
-### 1. Tools: **RStudio**  
+## 1. Tools: **RStudio**  
 Visualizations were created to communicate insights clearly and concisely.
 
 ---
@@ -292,7 +292,7 @@ Below are **all final R visualizations**.
 
 # 🚀 Act Phase
 
-### 1. **High-Level Insights**
+## 1. **High-Level Insights**
 
 - **Activity peaks** between 7 AM–10 AM  
 - **Wednesday** shows maximum movement  
@@ -301,7 +301,7 @@ Below are **all final R visualizations**.
 - Sedentary minutes negatively affect calorie burn  
 - Afternoon heart rate peaks are common  
 
-### 2. **Recommendations for Bellabeat**
+## 2. **Recommendations for Bellabeat**
 
 #### Marketing Strategy  
 - Send morning “Get Moving” nudges  
