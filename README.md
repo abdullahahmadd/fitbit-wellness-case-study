@@ -14,12 +14,12 @@
 1. [Project Overview](#-project-overview)  
 2. [Repository Contents](#-repository-contents)  
 3. [Business Task](#-business-task)  
-4. [1 Ask Phase](#-1-ask-phase)  
-5. [2 Prepare Phase](#-2-prepare-phase)  
-6. [3 Process Phase](#-3-process-phase)  
-7. [4 Analyze Phase](#️-4-analyze-phase)    
-8. [5 Share Phase](#-5-share-phase)  
-9. [6 Act Phase](#-6-act-phase)  
+4. [Ask Phase](#-ask-phase)  
+5. [Prepare Phase](#-prepare-phase)  
+6. [Process Phase](#-process-phase)  
+7. [Analyze Phase](#️-analyze-phase)    
+8. [Share Phase](#-share-phase)  
+9. [Act Phase](#-act-phase)  
 10. [Acknowledgments](#-acknowledgments)     
 
 ---
@@ -54,14 +54,14 @@ Bellabeat wants insights into **how users interact with wearable devices** to im
 
 ---
 
-# 🧭 1. Ask Phase  
+# 🧭 Ask Phase  
 - Identified problem  
 - Defined stakeholders  
 - Clarified analysis questions  
 The output of this phase was a clear understanding of what insights needed to be extracted from the dataset.
 ---
 
-# 📥 2. Prepare Phase  
+# 📥 Prepare Phase  
 ### Tools: Excel  
 - Loaded 7 raw Fitbit CSV files  
 - Cleaned messy fields  
@@ -76,7 +76,7 @@ The output of this phase was a clear understanding of what insights needed to be
 
 ---
 
-# 🧹 3. Process Phase  
+# 🧹 Process Phase  
 ### Tools: MS Excel  
 - Fixed inconsistencies  
 - Created columns: `day_of_week`, `week_number`, `sleep_hours`  
@@ -85,7 +85,7 @@ The output of this phase was a clear understanding of what insights needed to be
 
 ---
 
-# 🗄️ 4. Analyze Phase  
+# 🗄️ Analyze Phase  
 ### Tools: MySQL Workbench & RStudio  
 
 ---
@@ -191,7 +191,7 @@ Using `tidyverse`, `lubridate`, `ggplot2`
 
 ---
 
-# 📤 5. Share Phase  
+# 📤 Share Phase  
 ### Tools Used: **RStudio (ggplot2)**  
 Visualizations were created to communicate insights clearly and concisely.
 
@@ -229,7 +229,7 @@ Below are **all final R visualizations** with filenames and one-line description
 
 ---
 
-# 🚀 6. Act Phase  
+# 🚀 Act Phase  
 ### ✔ **High-Level Insights**
 - **Activity peaks** between 7 AM–10 AM  
 - **Wednesday** shows maximum movement  
