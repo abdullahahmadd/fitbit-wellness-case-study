@@ -1,5 +1,5 @@
 # Fitbit User Activity & Wellness Analysis
-### Google Data Analytics Specialization — Capstone Project
+### Google Data Analytics Specialization - Capstone Project
 
 ![SQL](https://img.shields.io/badge/Tool-MySQL-orange?logo=mysql)
 ![Excel](https://img.shields.io/badge/Tool-Excel-green?logo=microsoft-excel)
