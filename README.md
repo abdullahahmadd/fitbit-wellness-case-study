@@ -55,11 +55,11 @@ Bellabeat wants insight into how users interact with wearable devices to improve
 
 | Attribute | Detail |
 |---|---|
-| Source | Fitbit Fitness Tracker Data (Public Domain — Möbius / Kaggle) |
+| Source | Fitbit Fitness Tracker Data (Public Domain - Möbius / Kaggle) |
 | Raw Files | 7 CSV files (activity, sleep, heart rate, intensity, calories, steps) |
 | Users | 30+ unique Fitbit users |
 | Granularity | Daily and hourly logs |
-| Final Output | `Transformed_Fitbit_Dataset.xlsx` — cleaned, merged dataset |
+| Final Output | `Transformed_Fitbit_Dataset.xlsx` - cleaned, merged dataset |
 
 ---
 
@@ -76,22 +76,22 @@ Bellabeat wants insight into how users interact with wearable devices to improve
 
 ## Methodology
 
-**1. Ask — Define the Problem**
+**1. Ask - Define the Problem**
 Identified Bellabeat as the stakeholder and framed the core business questions around activity, sleep, and heart-rate behavior.
 
-**2. Prepare — Data Collection & Initial Review**
+**2. Prepare - Data Collection & Initial Review**
 Loaded 7 raw Fitbit CSV files in Excel. Identified key data issues: inconsistent datetime formats, heart rate outliers, missing sleep values, and high-frequency log volume.
 
-**3. Process — Cleaning & Structuring**
+**3. Process - Cleaning & Structuring**
 Fixed formatting inconsistencies, engineered new fields (`day_of_week`, `week_number`, `sleep_hours`), rounded numerical data, and verified dataset integrity before loading into MySQL.
 
-**4. Analyze — SQL & R**
+**4. Analyze - SQL & R**
 Built a relational MySQL schema, validated row counts and date ranges, and constructed a `daily_master` aggregation table combining steps, sleep, heart rate, intensity, and calories per user per day. Mirrored and extended this analysis in R for statistical summarization and visualization.
 
-**5. Share — Visualization**
+**5. Share - Visualization**
 Produced R visualizations (ggplot2) to communicate activity, sleep, and heart-rate trends clearly for a non-technical stakeholder audience.
 
-**6. Act — Recommendations**
+**6. Act - Recommendations**
 Converted findings into specific marketing, product, and engagement recommendations for Bellabeat.
 
 ---
